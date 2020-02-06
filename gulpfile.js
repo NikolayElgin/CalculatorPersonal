@@ -94,8 +94,8 @@ gulp.task('clean', cb => (
 /* build */
 
 gulp.task('build', gulp.series('clean', 'img', 'js', cb => {
-	const buildFonts = gulp.src('./fonts/**/*')
-		.pipe(gulp.dest('dist/fonts'));
+	const buildFonts = gulp.src('./font/**/*')
+		.pipe(gulp.dest('dist/font'));
 
 
 	const buildCss = gulp.src('./css/style.min.css')
